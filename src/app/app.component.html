@@ -1,14 +1,14 @@
-<!-- Bu sayfanın ismi:  {{title}} olarak tutulmaktadır.
-Hello {{user}}
-
-{{car1.Description}}
-
-<ul>
-  <li *ngFor="let car of cars">{{car.Description}}</li>
-</ul> -->
-
-<app-navi></app-navi>
-<app-brand></app-brand>
-<app-car></app-car>
-
-<router-outlet></router-outlet>
+<div class="container">
+  <app-navi></app-navi>
+  <div class="row">
+    <div class="col-md-3">
+      <app-brand></app-brand> 
+    </div>
+    <div class="col-md-9">
+      
+      <router-outlet></router-outlet>
+      
+      <!--<app-color></app-color>-->
+    </div>
+  </div>
+</div>
